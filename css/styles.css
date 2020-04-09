@@ -1,0 +1,179 @@
+body {
+   margin: 0;
+   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+   overflow-y: hidden;
+}
+
+.night {
+   height: 80vh;
+   width: 70vw;
+   margin: 5rem auto;
+   background: url('../assets/Img_1.png');
+   background-size: cover;
+   position: relative;
+   box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+   overflow-x: hidden;
+}
+
+.surface {
+   height: 140px;
+   width: 500%;
+   background: url('../assets/Img_02.png');
+   display: block;
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   background-repeat: repeat-x;
+   animation: moveRight 10s linear infinite;
+}
+
+.car {
+   z-index: 2;
+   position: absolute;
+   bottom: 6%;
+   left: 24%;
+   animation: suspension 1s linear infinite;
+}
+
+.car1 {
+   z-index: 1;
+   position: absolute;
+   bottom: 6%;
+   left: 24%;
+   animation: suspension 1s linear infinite;
+   pointer-events: none;
+}
+
+.star {
+   position: absolute;
+   top: 20%;
+   left: 4%;
+   animation: spin 1s linear infinite;
+}
+
+.star1 {
+   position: absolute;
+   top: 15%;
+   left: 10%;
+   animation: spin 1s linear infinite;
+}
+
+.star2 {
+   position: absolute;
+   top: 3%;
+   left: 3%;
+   animation: spin 1s linear infinite;
+}
+
+.star3 {
+   position: absolute;
+   top: 7%;
+   left: 13%;
+   animation: spin 1s linear infinite;
+}
+
+.star4 {
+   position: absolute;
+   top: 10%;
+   left: 23%;
+   animation: spin 1s linear infinite;
+}
+
+.star5 {
+   position: absolute;
+   top: 4%;
+   left: 33%;
+   animation: spin 1s linear infinite;
+}
+
+.star6 {
+   position: absolute;
+   top: 5%;
+   left: 43%;
+   animation: spin 1s linear infinite;
+}
+
+.star7 {
+   position: absolute;
+   top: 8%;
+   left: 53%;
+   animation: spin 1s linear infinite;
+}
+
+.star8 {
+   position: absolute;
+   top: 5%;
+   left: 63%;
+   animation: spin 1s linear infinite;
+}
+
+.star9 {
+   position: absolute;
+   top: 13%;
+   left: 73%;
+   animation: spin 1s linear infinite;
+}
+
+.star10 {
+   position: absolute;
+   top: 2%;
+   left: 83%;
+   animation: spin 1s linear infinite;
+}
+
+.star11 {
+   position: absolute;
+   top: 6%;
+   left: 88%;
+   animation: spin 1s linear infinite;
+}
+
+.star12 {
+   position: absolute;
+   top: 10%;
+   left: 95%;
+   animation: spin 1s linear infinite;
+}
+
+
+img:hover {
+   display: none;
+}
+
+
+
+
+
+
+
+/* Animation */
+
+@keyframes moveRight {
+   100% {
+      transform: translateX(-2950px);
+   }
+}
+
+@keyframes suspension {
+   100% {
+      transform: translateY(-1px);
+   }
+
+   50% {
+      transform: translateY(2px);
+   }
+
+   0% {
+      transform: translateY(-1px);
+   }
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
