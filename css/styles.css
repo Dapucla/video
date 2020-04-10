@@ -35,6 +35,10 @@ body {
    animation: suspension 1s linear infinite;
 }
 
+.car:hover {
+   opacity: 0;
+}
+
 .car1 {
    z-index: 1;
    position: absolute;
